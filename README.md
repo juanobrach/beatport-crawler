@@ -13,3 +13,15 @@ ___
  "track_id": "9440819"
 }
 ```
+
+
+- Clona el repositorio:
+```git clone https://github.com/juanobrach/Beatportcrawl.git```
+
+- Instala scrapy:
+```pip install Scrapy```
+
+- Ejecuta el spider:
+```scrapy crwal tracks```
+
+Las configuraciones de Firebase se encuentran en ```fbconfig_sample.py``` deberan renombrarlo a ```fbconfig.py ```
