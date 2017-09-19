@@ -27,11 +27,11 @@ class JsonWriterPipeline(object):
 		for key, value in item.items():
 			if key == 'name':
 				name = value
-				print(name)
-				track = db.child("tracks").order_by_child('name').start_at(str(name)).limit_to_first(1).get()
-				if track.val():
-					print('duplicated track found')
-				else:
+				track = db.child("tracks").order_by_child('name').equal_to(str(name)).get()
+				try: 
+					print(track.val())
+				except IndexError:
+					print( "No duplicated, do it." )
 					data = item
 					results = db.child("tracks").push(data)
 		return item

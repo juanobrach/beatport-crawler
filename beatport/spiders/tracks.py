@@ -4,8 +4,9 @@ import scrapy
 class TracksSpider(scrapy.Spider):
     name = "tracks"
     start_urls = [
-        'https://www.beatport.com/tracks/all?key=8&page=38&genres=12',
-        # 'https://www.beatport.com/tracks/all?key=9&page=30&genres=12&per-page=150'
+        'https://www.beatport.com/tracks/all?&page=100&genres=12&per-page=150',
+        'https://www.beatport.com/tracks/all?&page=101&genres=12&per-page=150',
+        'https://www.beatport.com/tracks/all?&page=102&genres=12&per-page=150'
     ]
 
     def parse(self, response):
