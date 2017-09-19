@@ -7,12 +7,17 @@
 
 import json
 import pyrebase
-from fbconfig import *
 
 
 class JsonWriterPipeline(object):
 
 	def process_item(self, item, spider):
+		config = {
+		  "apiKey": "AIzaSyCYCNVK5Us5s0D_UkJfcVWIl5NyAu8ofHo",
+		  "authDomain": "beatport-772ec.firebaseapp.com",
+		  "databaseURL": "https://beatport-772ec.firebaseio.com/",
+		  "storageBucket": "beatport-772ec.appspot.com"
+		}
 		firebase = pyrebase.initialize_app(config)
 		# Get a reference to the database service
 		db = firebase.database()

@@ -1,0 +1,17 @@
+setup.py
+beatport/__init__.py
+beatport/fbconfig.py
+beatport/items.py
+beatport/middlewares.py
+beatport/pipelines.py
+beatport/sample_fbconfig.py
+beatport/settings.py
+beatport/test_firebase.py
+beatport/spiders/__init__.py
+beatport/spiders/_tracks.py
+beatport/spiders/tracks.py
+project.egg-info/PKG-INFO
+project.egg-info/SOURCES.txt
+project.egg-info/dependency_links.txt
+project.egg-info/entry_points.txt
+project.egg-info/top_level.txt
